@@ -350,14 +350,6 @@
       return results;
     };
 
-    WOW.prototype.resetAnimation = function(event) {
-      var target;
-      if (event.type.toLowerCase().indexOf('animationend') >= 0) {
-        target = event.target || event.srcElement;
-        return target.className = target.className.replace(config.animateClass, '').trim();
-      }
-    };
-
     WOW.prototype.customStyle = function(box, hidden, duration, delay, iteration) {
       if (hidden) {
         this.cacheAnimationName(box);

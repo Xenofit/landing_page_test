@@ -7,6 +7,7 @@
 	<script src="js/wow.js"></script>
 	<script>new WOW().init();</script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+	<script type="text/javascript" src="https://vk.com/js/api/openapi.js?167"></script>
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="css/reset.css">
@@ -190,14 +191,14 @@
 	<section class="section5">
 		<div class="section5__background">
 			<div class="block-85">
-				<div class="flex-wrap">
+				<div class="flex-wrap flex_center">
 					<div class="flex-wrap__text">
 						<h1 class="flex-wrap__header flex-wrap__header_margin">IMPRESSED ?</h1>
 						<p class="flex-wrap__paragraph flex-wrap__paragraph_padding">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias</p>
 					</div>
 					<div class="flex-wrap__display-image">
 						<div class="flex-wrap__img flex-wrap__img_position">
-							<span class="flex-wrap__span">Logo</span>
+							<span class="flex-wrap__span2">Logo</span>
 						</div>
 					</div>
 				</div>
@@ -458,7 +459,7 @@
 				<h1 class="flex-wrapper__heading flex-wrapper__heading_margin">CONTACT US</h1>
 				<p class="flex-wrapper__paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor<br>incididunt ut labore et dolore magna aliqua.</p>
 			</div>
-			<div class="flex-wrap flex-wrap_justify flex-wrap_margin">
+			<div class="flex-wrap flex-wrap_justify flex-wrap_margin flex-wrap_wrap">
 				<a href="mailto:organize44@mail.ru" class="flex-wrap__card-of-contact">
 					<div class="flex-wrap__background-img">
 						<img src="images/contacts_post_ico.png" alt="mail-ico">
@@ -494,9 +495,9 @@
 			</div>
             <div class="active-panel active-panel_margin">
                 <form action="mailto:organize44@mail.ru" enctype="text/plain" class="active-panel__form" method="post">
-                  <input type="text" class="active-panel__input" placeholder="Name" name="Name">
-                  <input type="email" name="post" class="active-panel__input" placeholder="e-mail">
-                  <textarea class="active-panel__input active-panel__input_big" name="message"></textarea>
+                  <input type="text" class="active-panel__input active-panel__input_margin" placeholder="Name" name="Name">
+                  <input type="email" name="post" class="active-panel__input active-panel__input_margin" placeholder="E-mail">
+                  <textarea class="active-panel__input active-panel__input_big" name="message" placeholder="Your message"></textarea>
                  <button class="active-panel__button active-panel__button_left">Send</button>
                 </form>
 
@@ -541,43 +542,6 @@
 	</section>
 
 
-<!-- Создаём форму и указываем её обработчик и метод -->
-<!--
-<form action="mailto:organize44@mail.ru" method="post" name="form">
-
-
-
-  <input name="name" type="text" placeholder="Ваше имя"/>
-
-  <br>
-
-
-
-  <input name="email" type="text" placeholder="Ваша почта"/>
-
-  <br>
-
-
-
-  <input size="30" name="header" type="text" placeholder="Тема"/>
-
-  <br>
-
-
-
-  <textarea cols="32" name="message" rows="5"> Текст сообщения
-
-  </textarea>
-
-  <br>
-
-
-
-  <input type="submit" value="Отправить" />
-
-</form>
--->
-
 	<button class="button-back-to-top" title="Наверх">&uarr;</button>
 
 	<div id="overlay-modal">
@@ -590,6 +554,14 @@
 	        <button class="close" title="Close" onclick="document.getElementById('overlay-modal').style.display='none';"></button>
 	    </div>
 	</div>
+
+	<!-- VK Widget -->
+	<div id="vk_community_messages"></div>
+
+<!--Scripts-->
+<script type="text/javascript">
+VK.Widgets.CommunityMessages("vk_community_messages", 127607773, {expandTimeout: "10000",widgetPosition: "left",disableExpandChatSound: "1",disableNewMessagesSound: "1",tooltipButtonText: "Есть вопрос?"});
+</script>
 
 <!--modal window-->
 <script type="text/javascript">
@@ -614,7 +586,6 @@
 	});
 </script>
 
-
 <!--scroll by links(a)-->
 <script type="text/javascript">
 
@@ -631,7 +602,6 @@
 	 });
 	 });	
 </script>
-
 
 <!--clear field input-->
 <script type="text/javascript">
@@ -672,8 +642,6 @@
 	})();
 </script>
 
-
-
 <script>
 
 	let button1=document.getElementById("showText");
@@ -682,7 +650,10 @@
 	let button2=document.getElementById("hideText");
 
 	function showTextByClick() {
-		section.style.height = '600px';
+		let w = window.screen.width;
+			if (w < 425) {
+				section.style.height = '815px';
+			} else section.style.height = '600px';
 		text.style.display = 'block';
 		button1.style.display = 'none';
 		button2.style.display = 'block';
@@ -747,8 +718,7 @@
 	});
 </script>
 
-<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')
-</script>
+<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
 
 </body>
 </html>
