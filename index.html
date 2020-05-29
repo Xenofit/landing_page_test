@@ -1,722 +1,987 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta name = "viewport" content = "width=device-width, initial-scale = 1">
-	<title>Landing page</title>
-	<script src="js/wow.js"></script>
-	<script>new WOW().init();</script>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-	<script type="text/javascript" src="https://vk.com/js/api/openapi.js?167"></script>
-	<link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="css/reset.css">
-	<link rel="stylesheet" href="css/style1.css">
-	<link rel="stylesheet" href="css/modal.css">
-	<link rel="stylesheet" href="css/animated.css">
-	<link rel="stylesheet" href="css/cookie.css">
-</head>
-<body>
-
-	<div class="block-header">
-		<div class="block-header__background">
-			<div class="block-header__container-85">
-				<nav class="navigation-panel">
-					<h1 class="navigation-panel__header-logo bounceInLeft animated">LOGO</h1>
-					<div class="navigation-panel__links">
-						<a href="#section2" class="navigation-panel__link">Details</a>
-						<a href="#section3" class="navigation-panel__link">About</a>
-						<a href="#section4" class="navigation-panel__link">Services</a>
-						<a href="#section6" class="navigation-panel__link">Portfolio</a>
-						<a href="#section7" class="navigation-panel__link">Team</a>
-						<a href="#section10" class="navigation-panel__link">Price</a>
-						<a href="#section11" class="navigation-panel__link">Contacts</a>
-					</div>
-				</nav>
-			</div>
-			<h1 class="block-header__header1 bounceInRight animated">
-				WE ARE TEAM
-			</h1>
-			<p class="block-header__paragraph bounceInLeft animated">Lorem ipsum dolor sit amet, consectetur adipiscing elit,<br>sed do eiusmod tempor incididunt ut labore</p>
-			<div class="block-header__center-block">
-				<button class="block-header__scroll-button bounceInDown animated" title="Вниз">&darr;</button>
-			</div>
-		</div>
-	</div>
-
-	<section class="section1" id="section1">
-		<div class="block-61">
-			<div class="flex-wrapper">
-				<div class="flex-wrapper__text-block">
-					<h1 class="flex-wrapper__header flex-wrapper__header_margin">
-						THIS IS OUR COMPANY
-					</h1>
-					<p class="flex-wrapper__paragraph flex-wrapper__paragraph_margin">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-					<p class="flex-wrapper__paragraph flex-wrapper__paragraph_margin" style="display: none;" id="hidText">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-					<button class="flex-wrapper__button" id="showText" onclick="showTextByClick()">
-						Read More
-					</button>
-					<button class="flex-wrapper__button" id="hideText" onclick="hideTextByClick()" style="display: none">
-						Back
-					</button>
-				</div>
-				<div class="flex-wrapper__image">
-					<img src="images/ipad_picture.png" alt="ipad">
-				</div>
-			</div>
-
-		</div>
-	</section>
-
-	<section class="section2 bounceInRight wow" id="section2">
-		<div class="block-73">
-			<div class="flex-wrapper flex-wrapper_flex-direction">
-				<div class="flex-wrapper__text">
-					<h1 class="flex-wrapper__heading flex-wrapper__heading_margin">DETAILS ABOUT OUR COMPANY</h1>
-					<p class="flex-wrapper__paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit,<br> sed do eiusmod tempor incididunt...</p>
-				</div>
-				<div class="flex-wrapper__widgets">
-					<div class="flex-wrapper__widget active" id="buttonForBlock1">
-						<img src="images/widget__ico_heart.png" alt="heart">
-					</div>
-					<div class="flex-wrapper__widget" id="buttonForBlock2">
-						<img src="images/widget__ico_mouse.png" alt="mouse">
-					</div>
-					<div class="flex-wrapper__widget" id="buttonForBlock3">
-						<img src="images/widget__ico_lamp.png" alt="lamp">
-					</div>
-				</div>
-				<div class="flex-wrapper__blocks" id="block-1">
-					<div class="flex-wrapper__left-block">
-						<h2 class="flex-wrapper__header2">Creative Ideas
-						</h2>
-						<p class="flex-wrapper__paragraph2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-						</p>
-					</div>
-					<div class="flex-wrapper_right-block">
-						<p class="flex-wrapper__paragraph2 flex-wrapper__paragraph2_margin">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-						</p>
-					</div>				
-				</div>
-				<div class="flex-wrapper__blocks" id="block-2" style="display: none;">
-					<div class="flex-wrapper__left-block">
-						<h2 class="flex-wrapper__header2">Lorem
-						</h2>
-						<p class="flex-wrapper__paragraph2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-						</p>
-					</div>
-					<div class="flex-wrapper_right-block">
-						<p class="flex-wrapper__paragraph2 flex-wrapper__paragraph2_margin">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-						</p>
-					</div>				
-				</div>
-				<div class="flex-wrapper__blocks" id="block-3" style="display: none;">
-					<div class="flex-wrapper__left-block">
-						<h2 class="flex-wrapper__header2">Lor IPS
-						</h2>
-						<p class="flex-wrapper__paragraph2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-						</p>
-					</div>
-					<div class="flex-wrapper_right-block">
-						<p class="flex-wrapper__paragraph2 flex-wrapper__paragraph2_margin">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-						</p>
-					</div>				
-				</div>
-			</div>
-		</div>
-	</section>
-	
-	<section class="section3" id="section3">
-		<div class="flex-wrapper__text">
-						<h1 class="flex-wrapper__heading flex-wrapper__heading_margin">DETAILS ABOUT OUR COMPANY</h1>
-						<p class="flex-wrapper__paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit,<br> sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-		</div>
-		<div class="flex-wrap flex-wrap_resize">
-			<div class="flex-wrap__first-image"></div>
-			<div class="flex-wrap__second-image">
-				<div class="flex-wrap__background"></div>
-			</div>
-			<div class="flex-wrap__third-image">
-				<div class="flex-wrap__background"></div>
-			</div>
-		</div>
-		<div class="empty-wrapper">
-			<div class="container-75">
-				<div class="flex-wrap flex-wrap__align">
-					<span class="flex-wrap__span">Lorem ipsum dolor sit amet, consectetur adipiscing elit...</span>
-					<button class="flex-wrap__button">Submit Now</button>
-				</div>
-			</div>
-		</div>
-	</section>
-
-	<section class="section4" id="section4">
-		<div class="block-75">
-			<div class="flex-wrapper__text">
-				<h1 class="flex-wrapper__heading flex-wrapper__heading_margin">OUR SERVICES</h1>
-				<p class="flex-wrapper__paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit,<br>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-			</div>
-			<div class="flex-wrap flex-wrap_justify flex-wrap_margin flex-wrap_width1330">
-				<div class="flex-wrap__widgets-block flex-wrap__widgets-block_align">
-					<div class="flex-wrap__widget"><img src="images/widget__ico_wrench.png" alt="wrench"></div>
-					<div class="flex-wrap__widget active"><img src="images/widget__ico_roller.png" alt="roller"></div>
-					<div class="flex-wrap__widget"><img src="images/widget__ico_joystic.png" alt="joystic"></div>
-					<div class="flex-wrap__widget"><img src="images/widget__ico_plug.png" alt="plug"></div>
-				</div>
-				<div class="flex-wrap__info-block">
-					<h2 class="flex-wrap__header2 flex-wrap__header2_margin">Graphic Design</h2>
-					<p class="flex-wrap__paragraph2">Lorem ipsum dolor sit amet, consectetur adipiscing elit,<br>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-				</div>
-				<div class="flex-wrap__statistic-block">
-					<div class="flex-wrap__round1">
-						<span class="flex-wrap__number">
-							80 &#37;
-						</span>
-					</div>
-					<div class="flex-wrap__round2">
-						<span class="flex-wrap__number">
-							75 &#37;
-						</span>
-					</div>
-					<div class="flex-wrap__round3">
-						<span class="flex-wrap__number">
-							60 &#37;
-						</span>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-
-	<section class="section5">
-		<div class="section5__background">
-			<div class="block-85">
-				<div class="flex-wrap flex_center">
-					<div class="flex-wrap__text">
-						<h1 class="flex-wrap__header flex-wrap__header_margin">IMPRESSED ?</h1>
-						<p class="flex-wrap__paragraph flex-wrap__paragraph_padding">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias</p>
-					</div>
-					<div class="flex-wrap__display-image">
-						<div class="flex-wrap__img flex-wrap__img_position">
-							<span class="flex-wrap__span2">Logo</span>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-
-	<section class="section6 bounceInLeft wow" id="section6">
-		<div class="block-85">
-			<div class="flex-wrapper__text">
-				<h1 class="flex-wrapper__heading flex-wrapper__heading_margin">THE PORTFOLIO</h1>
-				<p class="flex-wrapper__paragraph">At vero eos et accusamus et iusto odio dignissimos ducimus qui <br> blanditiis praesentium</p>
-			</div>
-			<div class="flex-wrap flex-wrap_positioning-for-links">
-				<a href="" class="flex-wrap__item flex-wrap__item_margin active2">All Works</a>
-				<a href="" class="flex-wrap__item flex-wrap__item_margin">Print</a>
-				<a href="" class="flex-wrap__item flex-wrap__item_margin">Indentity</a>
-				<a href="" class="flex-wrap__item flex-wrap__item_margin">Branding</a>
-				<a href="" class="flex-wrap__item flex-wrap__item_margin"> Web</a>
-				<a href="" class="flex-wrap__item flex-wrap__item_margin">Developer</a>
-				<a href="" class="flex-wrap__item flex-wrap__item_margin">Image</a>
-			</div>
-			<div class="grid-images">
-				<div class="grid-images__item1 grid-images__item1_hover">
-					<div class="grid-images__background">
-						<h1 class="grid-images__header">TITLE HERE</h1>
-						<p class="grid-images__paragraph">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
-					</div>
-				</div>
-				<div class="grid-images__item2 grid-images__item1_hover">
-					<div class="grid-images__background">
-						<h2 class="grid-images__header">TITLE HERE</h2>
-						<p class="grid-images__paragraph">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
-					</div>
-				</div>
-				<div class="grid-images__item3 grid-images__item1_hover">
-					<div class="grid-images__background">
-						<h2 class="grid-images__header">TITLE HERE</h2>
-						<p class="grid-images__paragraph">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
-					</div>
-				</div>
-				<div class="grid-images__item4 grid-images__item1_hover">
-					<div class="grid-images__background">
-						<h2 class="grid-images__header">TITLE HERE</h2>
-						<p class="grid-images__paragraph">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
-					</div>
-				</div>
-				<div class="grid-images__item5 grid-images__item1_hover">
-					<div class="grid-images__background">
-						<h2 class="grid-images__header">TITLE HERE</h2>
-						<p class="grid-images__paragraph">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
-					</div>
-				</div>
-				<div class="grid-images__item6 grid-images__item1_hover">
-					<div class="grid-images__background">
-						<h2 class="grid-images__header">TITLE HERE</h2>
-						<p class="grid-images__paragraph">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
-					</div>
-				</div>
-				<div class="grid-images__item7 grid-images__item1_hover">
-					<div class="grid-images__background">
-						<h2 class="grid-images__header">TITLE HERE</h2>
-						<p class="grid-images__paragraph">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
-					</div>
-				</div>
-				<div class="grid-images__item8 grid-images__item1_hover">
-					<div class="grid-images__background">
-						<h2 class="grid-images__header">TITLE HERE</h2>
-						<p class="grid-images__paragraph">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
-					</div>
-				</div>
-				<div class="grid-images__item9 grid-images__item1_hover">
-					<div class="grid-images__background">
-						<h2 class="grid-images__header">TITLE HERE</h2>
-						<p class="grid-images__paragraph">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
-					</div>
-				</div>
-				<div class="grid-images__item10 grid-images__item1_hover">
-					<div class="grid-images__background">
-						<h2 class="grid-images__header">TITLE HERE</h2>
-						<p class="grid-images__paragraph">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
-					</div>
-				</div>
-				<div class="grid-images__item11 grid-images__item1_hover">
-					<div class="grid-images__background">
-						<h2 class="grid-images__header">TITLE HERE</h2>
-						<p class="grid-images__paragraph">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
-					</div>
-				</div>
-				<div class="grid-images__item12 grid-images__item1_hover">
-					<div class="grid-images__background">
-						<h2 class="grid-images__header">TITLE HERE</h2>
-						<p class="grid-images__paragraph">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
-					</div>
-				</div>
-				<div class="grid-images__item13">
-					<div class="grid-images__wrapper">
-					<p class="grid-images__paragraph2">
-						At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis 
-					</p>
-					<button class="grid-images__button">Start Project</button>
-					</div>
-				</div>
-
-			</div>
-		</div>
-	</section>
-
-	<section class="section7 bounceInRight wow" id="section7">
-		<div class="block-75">
-			<div class="flex-wrapper__text">
-				<h1 class="flex-wrapper__heading flex-wrapper__heading_margin">THE TEAM</h1>
-				<p class="flex-wrapper__paragraph">At vero eos et accusamus et iusto odio dignissimos ducimus qui <br> blanditiis praesentium</p>
-			</div>
-			<div class="flex-wrap flex-wrap__person">
-				<div class="flex-wrap__wrapper-img">
-					<img src="images/samir_ava.png" alt="Samir" class="flex-wrap__avatar">
-				</div>
-				<div class="flex-wrap__person-data">
-					<h3 class="flex-wrap__header3">Samir Norman</h3>
-					<p class="flex-wrap__position-person">CREATIVE DIRECTOR OUR COMPANY</p>
-					<p class="flex-wrap__more-info-about-person">At vero eos et accusamus et iusto odio dignissimos <br> ducimus qui blanditiis praesentium</p>
-					<div class="flex-wrap flex-wrap__number-and-name-of-the-skill">
-						<span class="flex-wrap__name-of-the-skill">BRANDING</span>
-						<span class="flex-wrap__level-of-the-skill">80&#37;</span>
-					</div>
-					<div class="flex-wrap__skill">
-						<div class="flex-wrap__level-branding"></div>
-					</div>
-					<div class="flex-wrap flex-wrap__number-and-name-of-the-skill">
-						<span class="flex-wrap__name-of-the-skill">WEB DESIGN</span>
-						<span class="flex-wrap__level-of-the-skill">65&#37;</span>
-					</div>
-					<div class="flex-wrap__skill">
-						<div class="flex-wrap__level-web-design"></div>
-					</div>
-					<div class="flex-wrap flex-wrap__number-and-name-of-the-skill">
-						<span class="flex-wrap__name-of-the-skill">USER INTERFACE</span>
-						<span class="flex-wrap__level-of-the-skill">75&#37;</span>
-					</div>
-					<div class="flex-wrap__skill">
-						<div class="flex-wrap__level-user-interface"></div>
-					</div>
-				</div>
-			</div>
-			<div class="flex-wrap flex-wrap__points">
-					<div class="flex-wrap__point active"></div>
-					<div class="flex-wrap__point"></div>
-					<div class="flex-wrap__point"></div>
-			</div>
-		</div>
-	</section>
-
-	<section class="section8">
-		<div class="background-container">
-			<div class="background-container__wrapper">
-				<h1 class="background-container__title">Already Loved Us? Let’s talk!
-				</h1>
-				<a href="#section11" class="background-container__button">Contact Us</a>
-			</div>
-		</div>
-	</section>
-
-	<section class="section9">
-		<div class="block-85">
-			<div class="flex-wrapper__text">
-				<h1 class="flex-wrapper__heading flex-wrapper__heading_margin">TESTIMONIALS</h1>
-				<p class="flex-wrapper__paragraph">At vero eos et accusamus et iusto odio dignissimos ducimus qui <br> blanditiis praesentium</p>
-			</div>
-			<div class="block-85__wrapper">
-				<div class="block-85__ico-man">
-					<img src="images/ico-man.png" alt="">
-				</div>
-				<div class="block-85__text">
-					<p class="block-85__testimonial">
-						At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia.
-					</p>
-					<p class="block-85__name">PARTHO</p>
-					<p class="block-85__from">FOUNDER, ARTWAYS BD</p>
-					<div class="flex-wrap flex-wrap__points">
-						<div class="flex-wrap__point active"></div>
-						<div class="flex-wrap__point"></div>
-						<div class="flex-wrap__point"></div>
-					</div>
-				</div>
-			</div>		
-		</div>
-	</section>
-
-	<section class="section10 rollIn wow" id="section10">
-		<div class="block-61 block-61_width-1200">
-			<div class="flex-wrapper__text">
-				<h1 class="flex-wrapper__heading flex-wrapper__heading_margin">OUR PRICE</h1>
-				<p class="flex-wrapper__paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-			</div>
-			<div class="flex-wrap flex-wrap__justify">
-				<div class="card-price">
-					<div class="card-price__container-of-title">
-						<h2 class="card-price__title">PREMIUM</h2>
-					</div>
-					<p class="card-price__price">
-						&#36; 60
-					</p>
-					<span class="card-price__time">
-							a month
-					</span>
-					<div class="card-price__buy">
-						<p class="card-price__info">Full Branding Project Management Unlimited Revisions 24/7 h Service Free Domain Free Hosting	
-						</p>
-						<div class="card-price__container-start">
-							<h2 class="card-price__title">Let's start</h2>
-						</div>
-					</div>
-				</div>
-				<div class="card-price">
-					<div class="card-price__container-of-title">
-						<h2 class="card-price__title">GOLD</h2>
-					</div>
-					<p class="card-price__price">
-						&#36; 70
-					</p>
-					<span class="card-price__time">
-							a month
-					</span>
-					<div class="card-price__buy">
-						<p class="card-price__info">Full Branding Project Management Unlimited Revisions 24/7 h Service Free Domain Free Hosting	
-						</p>
-						<div class="card-price__container-start">
-							<h2 class="card-price__title">Let's start</h2>
-						</div>
-					</div>
-				</div>
-				<div class="card-price">
-					<div class="card-price__container-of-title">
-						<h2 class="card-price__title">EXCLUSIVE</h2>
-					</div>
-					<p class="card-price__price">
-						&#36; 80
-					</p>
-					<span class="card-price__time">
-							a month
-					</span>
-					<div class="card-price__buy">
-						<p class="card-price__info">Full Branding Project Management Unlimited Revisions 24/7 h Service Free Domain Free Hosting	
-						</p>
-						<div class="card-price__container-start">
-							<h2 class="card-price__title">Let's start</h2>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-
-	<section class="section11" id="section11">
-		<div class="block-73 block-73_width-1200">
-			<div class="flex-wrapper__text">
-				<h1 class="flex-wrapper__heading flex-wrapper__heading_margin">CONTACT US</h1>
-				<p class="flex-wrapper__paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor<br>incididunt ut labore et dolore magna aliqua.</p>
-			</div>
-			<div class="flex-wrap flex-wrap_justify flex-wrap_margin flex-wrap_wrap">
-				<a href="mailto:organize44@mail.ru" class="flex-wrap__card-of-contact">
-					<div class="flex-wrap__background-img">
-						<img src="images/contacts_post_ico.png" alt="mail-ico">
-					</div>
-					<h2 class="flex-wrap__title">E-MAIL</h2>
-					<p class="flex-wrap__data">organize44@mail.ru
-					</p>
-				</a>
-				<a href="https://yandex.ru/maps/24/veliky-novgorod/house/ulitsa_zelinskogo_21/Z0gYdARnSUQOQFtifXlyd3lgYA==/?ll=31.237019%2C58.536534&sll=31.237019%2C58.536534&source=wizgeo&utm_medium=maps-desktop&utm_source=serp&z=15"  class="flex-wrap__card-of-contact">
-					<div class="flex-wrap__background-img2">
-						<img src="images/contacts_gps_ico.png" alt="mail-ico">
-					</div>
-					<h2 class="flex-wrap__title">OUR OFFICE</h2>
-					<p class="flex-wrap__data">Velikiy Novgorod, Russian Federation, st.Zelinskogo.
-					</p>
-				</a>
-				<a href="tel:+79633333393" class="flex-wrap__card-of-contact">
-					<div class="flex-wrap__background-img3">
-						<img src="images/contacts_phone_ico.png" alt="mail-ico">
-					</div>
-					<h2 class="flex-wrap__title">PHONE</h2>
-					<p class="flex-wrap__data">+7 963 333 33 93
-					</p>
-				</a>
-			</div>
-		</div>
-	</section>
-
-	<section class="section12">
-		<div class="block-73">
-			<div class="flex-wrapper__text">
-				<h1 class="flex-wrapper__heading flex-wrapper__heading_margin flex-wrapper__heading_color">CONTACT US</h1>
-			</div>
-            <div class="active-panel active-panel_margin">
-                <form action="mailto:organize44@mail.ru" enctype="text/plain" class="active-panel__form" method="post">
-                  <input type="text" class="active-panel__input active-panel__input_margin" placeholder="Name" name="Name">
-                  <input type="email" name="post" class="active-panel__input active-panel__input_margin" placeholder="E-mail">
-                  <textarea class="active-panel__input active-panel__input_big" name="message" placeholder="Your message"></textarea>
-                 <button class="active-panel__button active-panel__button_left">Send</button>
-                </form>
-
-                <button class="active-panel__button active-panel__button_right" onclick="clearInputField()">Reset</button>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale = 1" />
+    <title>Landing page</title>
+    <script src="js/wow.js"></script>
+    <script>
+      new WOW().init();
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script
+      type="text/javascript"
+      src="https://vk.com/js/api/openapi.js?167"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style1.css" />
+    <link rel="stylesheet" href="css/modal.css" />
+    <link rel="stylesheet" href="css/animated.css" />
+    <link rel="stylesheet" href="css/cookie.css" />
+  </head>
+  <body>
+    <div class="block-header">
+      <div class="block-header__background">
+        <div class="block-header__container-85">
+          <nav class="navigation-panel">
+            <h1 class="navigation-panel__header-logo bounceInLeft animated">
+              LOGO
+            </h1>
+            <div class="navigation-panel__links">
+              <a href="#section2" class="navigation-panel__link">Details</a>
+              <a href="#section3" class="navigation-panel__link">About</a>
+              <a href="#section4" class="navigation-panel__link">Services</a>
+              <a href="#section6" class="navigation-panel__link">Portfolio</a>
+              <a href="#section7" class="navigation-panel__link">Team</a>
+              <a href="#section10" class="navigation-panel__link">Our Price</a>
+              <a href="#section11" class="navigation-panel__link">Contacts</a>
             </div>
-		</div>
-	</section>
-	
-	<section class="section13">
-		<div class="block-85 block-85__background">
-			<div class="flex-wrapper__text">
-				<h1 class="flex-wrapper__heading flex-wrapper__heading_margin flex-wrapper__heading_color_black">MAP</h1>
-			</div>
-		
-			<iframe src="https://yandex.ru/map-widget/v1/-/CKQE7E4Y" class="block-85__iframe">
-			</iframe>
-		</div>
-	</section>
-	
-	<section class="section14">
-		<div class="block-85 block-85_align">
-			<h2 class="block-85__title">OUR COMPANY</h2>
-			<p class="block-85__text">Copyright 2020 All right Reserved</p>
-			<div class="flex-wrap flex-wrap_center">
-				<a href="" class="flex-wrap__link">
-					<img src="images/facebook_ico.png" alt="facebook">
-				</a>
-				<a href="" class="flex-wrap__link">
-					<img src="images/twitter_ico.png" alt="twitter">
-				</a>
-				<a href="" class="flex-wrap__link">
-					<img src="images/linkd_ico.png" alt="linkedIn">
-				</a>
-				<a href="" class="flex-wrap__link">
-					<img src="images/insta_ico.png" alt="instagram">
-				</a>
-				<a href="" class="flex-wrap__link flex-wrap__link_last">
-					<img src="images/vimeo_ico.png" alt="vimeo">
-				</a>
-			</div>
-		</div>
-	</section>
+          </nav>
+        </div>
+        <h1 class="block-header__header1 bounceInRight animated">
+          WE ARE TEAM
+        </h1>
+        <p class="block-header__paragraph bounceInLeft animated">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit,<br />sed do
+          eiusmod tempor incididunt ut labore
+        </p>
+        <div class="block-header__center-block">
+          <button
+            class="block-header__scroll-button bounceInDown animated"
+            title="Вниз"
+          >
+            &darr;
+          </button>
+        </div>
+      </div>
+    </div>
 
+    <section class="section1" id="section1">
+      <div class="block-61">
+        <div class="flex-wrapper">
+          <div class="flex-wrapper__text-block">
+            <h1 class="flex-wrapper__header flex-wrapper__header_margin">
+              THIS IS OUR COMPANY
+            </h1>
+            <p class="flex-wrapper__paragraph flex-wrapper__paragraph_margin">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+              sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+            <p
+              class="flex-wrapper__paragraph flex-wrapper__paragraph_margin"
+              style="display: none;"
+              id="hidText"
+            >
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+              sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+            <button
+              class="flex-wrapper__button"
+              id="showText"
+              onclick="showTextByClick()"
+            >
+              Read More
+            </button>
+            <button
+              class="flex-wrapper__button"
+              id="hideText"
+              onclick="hideTextByClick()"
+              style="display: none;"
+            >
+              Back
+            </button>
+          </div>
+          <div class="flex-wrapper__image">
+            <img src="images/ipad_picture.png" alt="ipad" />
+          </div>
+        </div>
+      </div>
+    </section>
 
-	<button class="button-back-to-top" title="Наверх">&uarr;</button>
+    <section class="section2 bounceInRight wow" id="section2">
+      <div class="block-73">
+        <div class="flex-wrapper flex-wrapper_flex-direction">
+          <div class="flex-wrapper__text">
+            <h1 class="flex-wrapper__heading flex-wrapper__heading_margin">
+              DETAILS ABOUT OUR COMPANY
+            </h1>
+            <p class="flex-wrapper__paragraph">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit,<br />
+              sed do eiusmod tempor incididunt...
+            </p>
+          </div>
+          <div class="flex-wrapper__widgets">
+            <div class="flex-wrapper__widget active" id="buttonForBlock1">
+              <img src="images/widget__ico_heart.png" alt="heart" />
+            </div>
+            <div class="flex-wrapper__widget" id="buttonForBlock2">
+              <img src="images/widget__ico_mouse.png" alt="mouse" />
+            </div>
+            <div class="flex-wrapper__widget" id="buttonForBlock3">
+              <img src="images/widget__ico_lamp.png" alt="lamp" />
+            </div>
+          </div>
+          <div class="flex-wrapper__blocks" id="block-1">
+            <div class="flex-wrapper__left-block">
+              <h2 class="flex-wrapper__header2">Creative Ideas</h2>
+              <p class="flex-wrapper__paragraph2">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
+            </div>
+            <div class="flex-wrapper_right-block">
+              <p
+                class="flex-wrapper__paragraph2 flex-wrapper__paragraph2_margin"
+              >
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                nulla pariatur.
+              </p>
+            </div>
+          </div>
+          <div class="flex-wrapper__blocks" id="block-2" style="display: none;">
+            <div class="flex-wrapper__left-block">
+              <h2 class="flex-wrapper__header2">Lorem</h2>
+              <p class="flex-wrapper__paragraph2">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
+            </div>
+            <div class="flex-wrapper_right-block">
+              <p
+                class="flex-wrapper__paragraph2 flex-wrapper__paragraph2_margin"
+              >
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                nulla pariatur.Lorem ipsum dolor sit amet, consectetur
+                adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua.
+              </p>
+            </div>
+          </div>
+          <div class="flex-wrapper__blocks" id="block-3" style="display: none;">
+            <div class="flex-wrapper__left-block">
+              <h2 class="flex-wrapper__header2">Lor IPS</h2>
+              <p class="flex-wrapper__paragraph2">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
+            </div>
+            <div class="flex-wrapper_right-block">
+              <p
+                class="flex-wrapper__paragraph2 flex-wrapper__paragraph2_margin"
+              >
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                nulla pariatur.Lorem ipsum dolor sit amet, consectetur
+                adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua.Duis aute irure dolor in reprehenderit in
+                voluptate velit esse cillum dolore eu fugiat nulla
+                pariatur.Lorem ipsum dolor sit amet, consectetur adipiscing
+                elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                aliqua.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-	<div id="overlay-modal">
-	    <div class="popup">
-	        <h2>It is a modal window</h2>
+    <section class="section3" id="section3">
+      <div class="flex-wrapper__text">
+        <h1 class="flex-wrapper__heading flex-wrapper__heading_margin">
+          DETAILS ABOUT OUR COMPANY
+        </h1>
+        <p class="flex-wrapper__paragraph">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit,<br />
+          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        </p>
+      </div>
+      <div class="flex-wrap flex-wrap_resize">
+        <div class="flex-wrap__first-image"></div>
+        <div class="flex-wrap__second-image">
+          <div class="flex-wrap__background"></div>
+        </div>
+        <div class="flex-wrap__third-image">
+          <div class="flex-wrap__background"></div>
+        </div>
+      </div>
+      <div class="empty-wrapper">
+        <div class="container-75">
+          <div class="flex-wrap flex-wrap__align">
+            <span class="flex-wrap__span"
+              >Lorem ipsum dolor sit amet, consectetur adipiscing elit...</span
+            >
+            <button class="flex-wrap__button">Submit Now</button>
+          </div>
+        </div>
+      </div>
+    </section>
 
-	         <div class="pl-left">
-	               <img src="images/welcome_modal.jpeg" alt="welcome">
-	         </div>
-	        <button class="close" title="Close" onclick="document.getElementById('overlay-modal').style.display='none';"></button>
-	    </div>
-	</div>
+    <section class="section4" id="section4">
+      <div class="block-75">
+        <div class="flex-wrapper__text">
+          <h1 class="flex-wrapper__heading flex-wrapper__heading_margin">
+            OUR SERVICES
+          </h1>
+          <p class="flex-wrapper__paragraph">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit,<br />sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+        </div>
+        <div
+          class="flex-wrap flex-wrap_justify flex-wrap_margin flex-wrap_width1330"
+        >
+          <div class="flex-wrap__widgets-block flex-wrap__widgets-block_align">
+            <div class="flex-wrap__widget">
+              <img src="images/widget__ico_wrench.png" alt="wrench" />
+            </div>
+            <div class="flex-wrap__widget active">
+              <img src="images/widget__ico_roller.png" alt="roller" />
+            </div>
+            <div class="flex-wrap__widget">
+              <img src="images/widget__ico_joystic.png" alt="joystic" />
+            </div>
+            <div class="flex-wrap__widget">
+              <img src="images/widget__ico_plug.png" alt="plug" />
+            </div>
+          </div>
+          <div class="flex-wrap__info-block">
+            <h2 class="flex-wrap__header2 flex-wrap__header2_margin">
+              Graphic Design
+            </h2>
+            <p class="flex-wrap__paragraph2">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit,<br />sed
+              do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+          </div>
+          <div class="flex-wrap__statistic-block">
+            <div class="flex-wrap__round1">
+              <span class="flex-wrap__number">
+                80 &#37;
+              </span>
+            </div>
+            <div class="flex-wrap__round2">
+              <span class="flex-wrap__number">
+                75 &#37;
+              </span>
+            </div>
+            <div class="flex-wrap__round3">
+              <span class="flex-wrap__number">
+                60 &#37;
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-	<!-- VK Widget -->
-	<div id="vk_community_messages"></div>
+    <section class="section5">
+      <div class="section5__background">
+        <div class="block-85">
+          <div class="flex-wrap flex_center">
+            <div class="flex-wrap__text">
+              <h1 class="flex-wrap__header flex-wrap__header_margin">
+                IMPRESSED ?
+              </h1>
+              <p class="flex-wrap__paragraph flex-wrap__paragraph_padding">
+                At vero eos et accusamus et iusto odio dignissimos ducimus qui
+                blanditiis praesentium voluptatum deleniti atque corrupti quos
+                dolores et quas molestias
+              </p>
+            </div>
+            <div class="flex-wrap__display-image">
+              <div class="flex-wrap__img flex-wrap__img_position">
+                <span class="flex-wrap__span2">Logo</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-<!--Scripts-->
-<script type="text/javascript">
-VK.Widgets.CommunityMessages("vk_community_messages", 127607773, {expandTimeout: "10000",widgetPosition: "left",disableExpandChatSound: "1",disableNewMessagesSound: "1",tooltipButtonText: "Есть вопрос?"});
-</script>
+    <section class="section6 bounceInLeft wow" id="section6">
+      <div class="block-85">
+        <div class="flex-wrapper__text">
+          <h1 class="flex-wrapper__heading flex-wrapper__heading_margin">
+            THE PORTFOLIO
+          </h1>
+          <p class="flex-wrapper__paragraph">
+            At vero eos et accusamus et iusto odio dignissimos ducimus qui
+            <br />
+            blanditiis praesentium
+          </p>
+        </div>
+        <div class="flex-wrap flex-wrap_positioning-for-links">
+          <a href="" class="flex-wrap__item flex-wrap__item_margin active2"
+            >All Works</a
+          >
+          <a href="" class="flex-wrap__item flex-wrap__item_margin">Print</a>
+          <a href="" class="flex-wrap__item flex-wrap__item_margin"
+            >Indentity</a
+          >
+          <a href="" class="flex-wrap__item flex-wrap__item_margin">Branding</a>
+          <a href="" class="flex-wrap__item flex-wrap__item_margin"> Web</a>
+          <a href="" class="flex-wrap__item flex-wrap__item_margin"
+            >Developer</a
+          >
+          <a href="" class="flex-wrap__item flex-wrap__item_margin">Image</a>
+        </div>
+        <div class="grid-images">
+          <div class="grid-images__item1 grid-images__item1_hover">
+            <div class="grid-images__background">
+              <h1 class="grid-images__header">TITLE HERE</h1>
+              <p class="grid-images__paragraph">
+                At vero eos et accusamus et iusto odio dignissimos ducimus qui
+                blanditiis praesentium
+              </p>
+            </div>
+          </div>
+          <div class="grid-images__item2 grid-images__item1_hover">
+            <div class="grid-images__background">
+              <h2 class="grid-images__header">TITLE HERE</h2>
+              <p class="grid-images__paragraph">
+                At vero eos et accusamus et iusto odio dignissimos ducimus qui
+                blanditiis praesentium
+              </p>
+            </div>
+          </div>
+          <div class="grid-images__item3 grid-images__item1_hover">
+            <div class="grid-images__background">
+              <h2 class="grid-images__header">TITLE HERE</h2>
+              <p class="grid-images__paragraph">
+                At vero eos et accusamus et iusto odio dignissimos ducimus qui
+                blanditiis praesentium
+              </p>
+            </div>
+          </div>
+          <div class="grid-images__item4 grid-images__item1_hover">
+            <div class="grid-images__background">
+              <h2 class="grid-images__header">TITLE HERE</h2>
+              <p class="grid-images__paragraph">
+                At vero eos et accusamus et iusto odio dignissimos ducimus qui
+                blanditiis praesentium
+              </p>
+            </div>
+          </div>
+          <div class="grid-images__item5 grid-images__item1_hover">
+            <div class="grid-images__background">
+              <h2 class="grid-images__header">TITLE HERE</h2>
+              <p class="grid-images__paragraph">
+                At vero eos et accusamus et iusto odio dignissimos ducimus qui
+                blanditiis praesentium
+              </p>
+            </div>
+          </div>
+          <div class="grid-images__item6 grid-images__item1_hover">
+            <div class="grid-images__background">
+              <h2 class="grid-images__header">TITLE HERE</h2>
+              <p class="grid-images__paragraph">
+                At vero eos et accusamus et iusto odio dignissimos ducimus qui
+                blanditiis praesentium
+              </p>
+            </div>
+          </div>
+          <div class="grid-images__item7 grid-images__item1_hover">
+            <div class="grid-images__background">
+              <h2 class="grid-images__header">TITLE HERE</h2>
+              <p class="grid-images__paragraph">
+                At vero eos et accusamus et iusto odio dignissimos ducimus qui
+                blanditiis praesentium
+              </p>
+            </div>
+          </div>
+          <div class="grid-images__item8 grid-images__item1_hover">
+            <div class="grid-images__background">
+              <h2 class="grid-images__header">TITLE HERE</h2>
+              <p class="grid-images__paragraph">
+                At vero eos et accusamus et iusto odio dignissimos ducimus qui
+                blanditiis praesentium
+              </p>
+            </div>
+          </div>
+          <div class="grid-images__item9 grid-images__item1_hover">
+            <div class="grid-images__background">
+              <h2 class="grid-images__header">TITLE HERE</h2>
+              <p class="grid-images__paragraph">
+                At vero eos et accusamus et iusto odio dignissimos ducimus qui
+                blanditiis praesentium
+              </p>
+            </div>
+          </div>
+          <div class="grid-images__item10 grid-images__item1_hover">
+            <div class="grid-images__background">
+              <h2 class="grid-images__header">TITLE HERE</h2>
+              <p class="grid-images__paragraph">
+                At vero eos et accusamus et iusto odio dignissimos ducimus qui
+                blanditiis praesentium
+              </p>
+            </div>
+          </div>
+          <div class="grid-images__item11 grid-images__item1_hover">
+            <div class="grid-images__background">
+              <h2 class="grid-images__header">TITLE HERE</h2>
+              <p class="grid-images__paragraph">
+                At vero eos et accusamus et iusto odio dignissimos ducimus qui
+                blanditiis praesentium
+              </p>
+            </div>
+          </div>
+          <div class="grid-images__item12 grid-images__item1_hover">
+            <div class="grid-images__background">
+              <h2 class="grid-images__header">TITLE HERE</h2>
+              <p class="grid-images__paragraph">
+                At vero eos et accusamus et iusto odio dignissimos ducimus qui
+                blanditiis praesentium
+              </p>
+            </div>
+          </div>
+          <div class="grid-images__item13">
+            <div class="grid-images__wrapper">
+              <p class="grid-images__paragraph2">
+                At vero eos et accusamus et iusto odio dignissimos ducimus qui
+                blanditiis
+              </p>
+              <button class="grid-images__button">Start Project</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-<!--modal window-->
-<script type="text/javascript">
-	var delay_popup = 1000;
-	setTimeout("document.getElementById('overlay-modal').style.opacity='1'", delay_popup);
-</script>
+    <section class="section7 bounceInRight wow" id="section7">
+      <div class="block-75">
+        <div class="flex-wrapper__text">
+          <h1 class="flex-wrapper__heading flex-wrapper__heading_margin">
+            THE TEAM
+          </h1>
+          <p class="flex-wrapper__paragraph">
+            At vero eos et accusamus et iusto odio dignissimos ducimus qui
+            <br />
+            blanditiis praesentium
+          </p>
+        </div>
+        <div class="flex-wrap flex-wrap__person">
+          <div class="flex-wrap__wrapper-img">
+            <img
+              src="images/samir_ava.png"
+              alt="Samir"
+              class="flex-wrap__avatar"
+            />
+          </div>
+          <div class="flex-wrap__person-data">
+            <h3 class="flex-wrap__header3">Samir Norman</h3>
+            <p class="flex-wrap__position-person">
+              CREATIVE DIRECTOR OUR COMPANY
+            </p>
+            <p class="flex-wrap__more-info-about-person">
+              At vero eos et accusamus et iusto odio dignissimos <br />
+              ducimus qui blanditiis praesentium
+            </p>
+            <div class="flex-wrap flex-wrap__number-and-name-of-the-skill">
+              <span class="flex-wrap__name-of-the-skill">BRANDING</span>
+              <span class="flex-wrap__level-of-the-skill">80&#37;</span>
+            </div>
+            <div class="flex-wrap__skill">
+              <div class="flex-wrap__level-branding"></div>
+            </div>
+            <div class="flex-wrap flex-wrap__number-and-name-of-the-skill">
+              <span class="flex-wrap__name-of-the-skill">WEB DESIGN</span>
+              <span class="flex-wrap__level-of-the-skill">65&#37;</span>
+            </div>
+            <div class="flex-wrap__skill">
+              <div class="flex-wrap__level-web-design"></div>
+            </div>
+            <div class="flex-wrap flex-wrap__number-and-name-of-the-skill">
+              <span class="flex-wrap__name-of-the-skill">USER INTERFACE</span>
+              <span class="flex-wrap__level-of-the-skill">75&#37;</span>
+            </div>
+            <div class="flex-wrap__skill">
+              <div class="flex-wrap__level-user-interface"></div>
+            </div>
+          </div>
+        </div>
+        <div class="flex-wrap flex-wrap__points">
+          <div class="flex-wrap__point active"></div>
+          <div class="flex-wrap__point"></div>
+          <div class="flex-wrap__point"></div>
+        </div>
+      </div>
+    </section>
 
-<!--block-header__scroll-button-->
-<script type="text/javascript">
+    <section class="section8">
+      <div class="background-container">
+        <div class="background-container__wrapper">
+          <h1 class="background-container__title">
+            Already Loved Us? Let’s talk!
+          </h1>
+          <a href="#section11" class="background-container__button"
+            >Contact Us</a
+          >
+        </div>
+      </div>
+    </section>
 
-	$(document).ready(function() {
+    <section class="section9">
+      <div class="block-85">
+        <div class="flex-wrapper__text">
+          <h1 class="flex-wrapper__heading flex-wrapper__heading_margin">
+            TESTIMONIALS
+          </h1>
+          <p class="flex-wrapper__paragraph">
+            At vero eos et accusamus et iusto odio dignissimos ducimus qui
+            <br />
+            blanditiis praesentium
+          </p>
+        </div>
+        <div class="block-85__wrapper">
+          <div class="block-85__ico-man">
+            <img src="images/ico-man.png" alt="" />
+          </div>
+          <div class="block-85__text">
+            <p class="block-85__testimonial">
+              At vero eos et accusamus et iusto odio dignissimos ducimus qui
+              blanditiis praesentium voluptatum deleniti atque corrupti quos
+              dolores et quas molestias excepturi sint occaecati cupiditate non
+              provident, similique sunt in culpa qui officia deserunt mollitia.
+            </p>
+            <p class="block-85__name">PARTHO</p>
+            <p class="block-85__from">FOUNDER, ARTWAYS BD</p>
+            <div class="flex-wrap flex-wrap__points">
+              <div class="flex-wrap__point active"></div>
+              <div class="flex-wrap__point"></div>
+              <div class="flex-wrap__point"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-	  $('.block-header__scroll-button').on('click', function() {
+    <section class="section10 rollIn wow" id="section10">
+      <div class="block-61 block-61_width-1200">
+        <div class="flex-wrapper__text">
+          <h1 class="flex-wrapper__heading flex-wrapper__heading_margin">
+            OUR PRICE
+          </h1>
+          <p class="flex-wrapper__paragraph">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+        </div>
+        <div class="flex-wrap flex-wrap__justify">
+          <div class="card-price">
+            <div class="card-price__container-of-title">
+              <h2 class="card-price__title">PREMIUM</h2>
+            </div>
+            <p class="card-price__price">
+              &#36; 60
+            </p>
+            <span class="card-price__time">
+              a month
+            </span>
+            <div class="card-price__buy">
+              <p class="card-price__info">
+                Full Branding Project Management Unlimited Revisions 24/7 h
+                Service Free Domain Free Hosting
+              </p>
+              <div class="card-price__container-start">
+                <h2 class="card-price__title">Let's start</h2>
+              </div>
+            </div>
+          </div>
+          <div class="card-price">
+            <div class="card-price__container-of-title">
+              <h2 class="card-price__title">GOLD</h2>
+            </div>
+            <p class="card-price__price">
+              &#36; 70
+            </p>
+            <span class="card-price__time">
+              a month
+            </span>
+            <div class="card-price__buy">
+              <p class="card-price__info">
+                Full Branding Project Management Unlimited Revisions 24/7 h
+                Service Free Domain Free Hosting
+              </p>
+              <div class="card-price__container-start">
+                <h2 class="card-price__title">Let's start</h2>
+              </div>
+            </div>
+          </div>
+          <div class="card-price">
+            <div class="card-price__container-of-title">
+              <h2 class="card-price__title">EXCLUSIVE</h2>
+            </div>
+            <p class="card-price__price">
+              &#36; 80
+            </p>
+            <span class="card-price__time">
+              a month
+            </span>
+            <div class="card-price__buy">
+              <p class="card-price__info">
+                Full Branding Project Management Unlimited Revisions 24/7 h
+                Service Free Domain Free Hosting
+              </p>
+              <div class="card-price__container-start">
+                <h2 class="card-price__title">Let's start</h2>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-	    $('.section1').get(0).scrollIntoView({
-	      block: "start",
-	      behavior: "smooth"
-	    });
+    <section class="section11" id="section11">
+      <div class="block-73 block-73_width-1200">
+        <div class="flex-wrapper__text">
+          <h1 class="flex-wrapper__heading flex-wrapper__heading_margin">
+            CONTACT US
+          </h1>
+          <p class="flex-wrapper__paragraph">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor<br />incididunt ut labore et dolore magna aliqua.
+          </p>
+        </div>
+        <div
+          class="flex-wrap flex-wrap_justify flex-wrap_margin flex-wrap_wrap"
+        >
+          <a
+            href="mailto:organize44@mail.ru"
+            class="flex-wrap__card-of-contact"
+          >
+            <div class="flex-wrap__background-img">
+              <img src="images/contacts_post_ico.png" alt="mail-ico" />
+            </div>
+            <h2 class="flex-wrap__title">E-MAIL</h2>
+            <p class="flex-wrap__data">organize44@mail.ru</p>
+          </a>
+          <a
+            href="https://yandex.ru/maps/24/veliky-novgorod/house/ulitsa_zelinskogo_21/Z0gYdARnSUQOQFtifXlyd3lgYA==/?ll=31.237019%2C58.536534&sll=31.237019%2C58.536534&source=wizgeo&utm_medium=maps-desktop&utm_source=serp&z=15"
+            class="flex-wrap__card-of-contact"
+          >
+            <div class="flex-wrap__background-img2">
+              <img src="images/contacts_gps_ico.png" alt="mail-ico" />
+            </div>
+            <h2 class="flex-wrap__title">OUR OFFICE</h2>
+            <p class="flex-wrap__data">
+              Velikiy Novgorod, Russian Federation, st.Zelinskogo.
+            </p>
+          </a>
+          <a href="tel:+79633333393" class="flex-wrap__card-of-contact">
+            <div class="flex-wrap__background-img3">
+              <img src="images/contacts_phone_ico.png" alt="mail-ico" />
+            </div>
+            <h2 class="flex-wrap__title">PHONE</h2>
+            <p class="flex-wrap__data">+7 963 333 33 93</p>
+          </a>
+        </div>
+      </div>
+    </section>
 
-	  });
+    <section class="section12">
+      <div class="block-73">
+        <div class="flex-wrapper__text">
+          <h1
+            class="flex-wrapper__heading flex-wrapper__heading_margin flex-wrapper__heading_color"
+          >
+            CONTACT US
+          </h1>
+        </div>
+        <div class="active-panel active-panel_margin">
+          <form
+            action="mailto:organize44@mail.ru"
+            enctype="text/plain"
+            class="active-panel__form"
+            method="post"
+          >
+            <input
+              type="text"
+              class="active-panel__input active-panel__input_margin"
+              placeholder="Name"
+              name="Name"
+            />
+            <input
+              type="email"
+              name="post"
+              class="active-panel__input active-panel__input_margin"
+              placeholder="E-mail"
+            />
+            <textarea
+              class="active-panel__input active-panel__input_big"
+              name="message"
+              placeholder="Your message"
+            ></textarea>
+            <button class="active-panel__button active-panel__button_left">
+              Send
+            </button>
+          </form>
 
-	});
-</script>
+          <button
+            class="active-panel__button active-panel__button_right"
+            onclick="clearInputField()"
+          >
+            Reset
+          </button>
+        </div>
+      </div>
+    </section>
 
-<!--scroll by links(a)-->
-<script type="text/javascript">
+    <section class="section13">
+      <div class="block-85 block-85__background">
+        <div class="flex-wrapper__text">
+          <h1
+            class="flex-wrapper__heading flex-wrapper__heading_margin flex-wrapper__heading_color_black"
+          >
+            MAP
+          </h1>
+        </div>
 
-	$('a[href^="#"]').bind('click.smoothscroll',function (e) {
-	 e.preventDefault();
-	 
-	var target = this.hash,
-	 $target = $(target);
-	 
-	$('html, body').stop().animate({
-	 'scrollTop': $target.offset().top
-	 }, 500, 'swing', function () {
-	 window.location.hash = target;
-	 });
-	 });	
-</script>
+        <iframe
+          src="https://yandex.ru/map-widget/v1/-/CKQE7E4Y"
+          class="block-85__iframe"
+        >
+        </iframe>
+      </div>
+    </section>
 
-<!--clear field input-->
-<script type="text/javascript">
-	let input = document.getElementsByClassName('active-panel__input');
-	function clearInputField() {
-		for (var i = 0; i < input.length; i++) {
-			input[i].value = '';
-		}
-	}
-</script>
+    <section class="section14">
+      <div class="block-85 block-85_align">
+        <h2 class="block-85__title">OUR COMPANY</h2>
+        <p class="block-85__text">Copyright 2020 All right Reserved</p>
+        <div class="flex-wrap flex-wrap_center">
+          <a href="" class="flex-wrap__link">
+            <img src="images/facebook_ico.png" alt="facebook" />
+          </a>
+          <a href="" class="flex-wrap__link">
+            <img src="images/twitter_ico.png" alt="twitter" />
+          </a>
+          <a href="" class="flex-wrap__link">
+            <img src="images/linkd_ico.png" alt="linkedIn" />
+          </a>
+          <a href="" class="flex-wrap__link">
+            <img src="images/insta_ico.png" alt="instagram" />
+          </a>
+          <a href="" class="flex-wrap__link flex-wrap__link_last">
+            <img src="images/vimeo_ico.png" alt="vimeo" />
+          </a>
+        </div>
+      </div>
+    </section>
 
-<script type="text/javascript">
-	(function() {
-	  'use strict';
+    <button class="button-back-to-top" title="Наверх">&uarr;</button>
 
-	  function trackScroll() {
-	    var scrolled = window.pageYOffset;
+    <div id="overlay-modal">
+      <div class="popup">
+        <h2>It is a modal window</h2>
 
-	    if (scrolled > 0) {
-	      goTopBtn.classList.add('button-back-to-top-show');
-	    }
-	    if (scrolled == 0) {
-	      goTopBtn.classList.remove('button-back-to-top-show');
-	    }
-	  }
+        <div class="pl-left">
+          <img src="images/welcome_modal.jpeg" alt="welcome" />
+        </div>
+        <button
+          class="close"
+          title="Close"
+          onclick="document.getElementById('overlay-modal').style.display='none';"
+        ></button>
+      </div>
+    </div>
 
-	  function backToTop() {
-	    if (window.pageYOffset > 0) {
-	      window.scrollBy(0, -80);
-	      setTimeout(backToTop, 2);
-	    }
-	  }
+    <!-- VK Widget -->
+    <div id="vk_community_messages"></div>
 
-	  var goTopBtn = document.querySelector('.button-back-to-top');
+    <!--Scripts-->
+    <script type="text/javascript">
+      VK.Widgets.CommunityMessages("vk_community_messages", 127607773, {
+        expandTimeout: "10000",
+        widgetPosition: "left",
+        disableExpandChatSound: "1",
+        disableNewMessagesSound: "1",
+        tooltipButtonText: "Есть вопрос?",
+      });
+    </script>
 
-	  window.addEventListener('scroll', trackScroll);
-	  goTopBtn.addEventListener('click', backToTop);
-	})();
-</script>
+    <!--modal window-->
+    <script type="text/javascript">
+      var delay_popup = 1000;
+      setTimeout(
+        "document.getElementById('overlay-modal').style.opacity='1'",
+        delay_popup
+      );
+    </script>
 
-<script>
+    <!--block-header__scroll-button-->
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $(".block-header__scroll-button").on("click", function () {
+          $(".section1").get(0).scrollIntoView({
+            block: "start",
+            behavior: "smooth",
+          });
+        });
+      });
+    </script>
 
-	let button1=document.getElementById("showText");
-	let text=document.getElementById("hidText");
-	let section=document.getElementById("section1");
-	let button2=document.getElementById("hideText");
+    <!--scroll by links(a)-->
+    <script type="text/javascript">
+      $('a[href^="#"]').bind("click.smoothscroll", function (e) {
+        e.preventDefault();
 
-	function showTextByClick() {
-		let w = window.screen.width;
-			if (w < 425) {
-				section.style.height = '815px';
-			} else section.style.height = '600px';
-		text.style.display = 'block';
-		button1.style.display = 'none';
-		button2.style.display = 'block';
-	}
+        var target = this.hash,
+          $target = $(target);
 
-	function hideTextByClick() {
-		section.style.height = '487px';
-		text.style.display = 'none';
-		button1.style.display = 'block';
-		button2.style.display = 'none';
-	}
-</script>
+        $("html, body")
+          .stop()
+          .animate(
+            {
+              scrollTop: $target.offset().top,
+            },
+            500,
+            "swing",
+            function () {
+              window.location.hash = target;
+            }
+          );
+      });
+    </script>
 
-<!--show block1, block2, block3-->
-<script>
+    <!--clear field input-->
+    <script type="text/javascript">
+      let input = document.getElementsByClassName("active-panel__input");
+      function clearInputField() {
+        for (var i = 0; i < input.length; i++) {
+          input[i].value = "";
+        }
+      }
+    </script>
 
-	let text1=document.getElementById('block-1');
-	let text2=document.getElementById('block-2');
-	let text3=document.getElementById('block-3');
-	let but1=document.getElementById('buttonForBlock1');
-	let but2=document.getElementById('buttonForBlock2');
-	let but3=document.getElementById('buttonForBlock3');
+    <script type="text/javascript">
+      (function () {
+        "use strict";
 
-	but1.addEventListener('click', function() {
+        function trackScroll() {
+          var scrolled = window.pageYOffset;
 
-		if (document.documentElement.clientWidth < 1200) {
-			text1.style.display='block';
-		} else {
-			text1.style.display='flex';
-		}
-		text2.style.display='none';
-		text3.style.display='none';
-		but2.classList.remove('active');
-		but1.classList.add('active');
-		but3.classList.remove('active');
-	});
+          if (scrolled > 0) {
+            goTopBtn.classList.add("button-back-to-top-show");
+          }
+          if (scrolled == 0) {
+            goTopBtn.classList.remove("button-back-to-top-show");
+          }
+        }
 
-	but2.addEventListener('click', function() {
-		if (document.documentElement.clientWidth < 1200) {
-			text2.style.display='block';
-		} else {
-			text2.style.display='flex';
-		}
-		text1.style.display='none';
-		text3.style.display='none';
-		but2.classList.add('active');
-		but1.classList.remove('active');
-		but3.classList.remove('active');
-	});
+        function backToTop() {
+          if (window.pageYOffset > 0) {
+            window.scrollBy(0, -80);
+            setTimeout(backToTop, 2);
+          }
+        }
 
-	but3.addEventListener('click', function() {
-		if (document.documentElement.clientWidth < 1200) {
-			text3.style.display='block';
-		} else {
-			text3.style.display='flex';
-		}
-		text1.style.display='none';
-		text2.style.display='none';
-		but2.classList.remove('active');
-		but1.classList.remove('active');
-		but3.classList.add('active');
-	});
-</script>
+        var goTopBtn = document.querySelector(".button-back-to-top");
 
-</body>
+        window.addEventListener("scroll", trackScroll);
+        goTopBtn.addEventListener("click", backToTop);
+      })();
+    </script>
+
+    <script>
+      let button1 = document.getElementById("showText");
+      let text = document.getElementById("hidText");
+      let section = document.getElementById("section1");
+      let button2 = document.getElementById("hideText");
+
+      function showTextByClick() {
+        let w = window.screen.width;
+        if (w < 425) {
+          section.style.height = "815px";
+        } else section.style.height = "600px";
+        text.style.display = "block";
+        button1.style.display = "none";
+        button2.style.display = "block";
+      }
+
+      function hideTextByClick() {
+        section.style.height = "487px";
+        text.style.display = "none";
+        button1.style.display = "block";
+        button2.style.display = "none";
+      }
+    </script>
+
+    <!--show block1, block2, block3-->
+    <script>
+      let text1 = document.getElementById("block-1");
+      let text2 = document.getElementById("block-2");
+      let text3 = document.getElementById("block-3");
+      let but1 = document.getElementById("buttonForBlock1");
+      let but2 = document.getElementById("buttonForBlock2");
+      let but3 = document.getElementById("buttonForBlock3");
+
+      but1.addEventListener("click", function () {
+        if (document.documentElement.clientWidth < 1200) {
+          text1.style.display = "block";
+        } else {
+          text1.style.display = "flex";
+        }
+        text2.style.display = "none";
+        text3.style.display = "none";
+        but2.classList.remove("active");
+        but1.classList.add("active");
+        but3.classList.remove("active");
+      });
+
+      but2.addEventListener("click", function () {
+        if (document.documentElement.clientWidth < 1200) {
+          text2.style.display = "block";
+        } else {
+          text2.style.display = "flex";
+        }
+        text1.style.display = "none";
+        text3.style.display = "none";
+        but2.classList.add("active");
+        but1.classList.remove("active");
+        but3.classList.remove("active");
+      });
+
+      but3.addEventListener("click", function () {
+        if (document.documentElement.clientWidth < 1200) {
+          text3.style.display = "block";
+        } else {
+          text3.style.display = "flex";
+        }
+        text1.style.display = "none";
+        text2.style.display = "none";
+        but2.classList.remove("active");
+        but1.classList.remove("active");
+        but3.classList.add("active");
+      });
+    </script>
+  </body>
 </html>
